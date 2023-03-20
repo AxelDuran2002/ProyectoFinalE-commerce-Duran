@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "Avengers(2012)",
+        "price": 10000,
+        "description": "dwqdasidfocnwqiodnwqiodcowndw",
+        "img": "/assets/peli-1.jpg",
+        "category": "Peliculas",
+        "stock": 1
+    },
+    {
+        "id": 2,
+        "name": "Avengers Age of Ultron(2015)",
+        "price": 15000,
+        "description": "dwqdasidfocnwqiodnwqiodcowndw",
+        "img": "/assets/peli-2.jpg",
+        "category": "Peliculas",
+        "stock": 32
+    },
+    {
+        "id": 3,
+        "name": "Avengers Infinity War(2018)",
+        "price": 20000,
+        "description": "dwqdasidfocnwqiodnwqiodcowndw",
+        "img": "/assets/peli-3.jpg",
+        "category": "Peliculas",
+        "stock": 9
+    },
+    {
+        "id": 4,
+        "name": "Avengers Endgame(2019)",
+        "price": 25000,
+        "description": "dwqdasidfocnwqiodnwqiodcowndw",
+        "img": "/assets/peli-4.jpg",
+        "category": "Peliculas",
+        "stock": 27
+    }
+]
