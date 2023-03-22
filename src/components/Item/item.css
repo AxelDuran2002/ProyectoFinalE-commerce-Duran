@@ -1,4 +1,19 @@
+.portada{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+
+}
+
+.nombre{
+    font-size: 21px;
+}
+
 .imagen{
     width: 250px;
     height: 250px;
+}
+
+.descrip{
+    font-size: 11px;
 }

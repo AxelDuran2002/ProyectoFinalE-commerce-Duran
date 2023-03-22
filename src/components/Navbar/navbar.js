@@ -13,8 +13,8 @@ export const Navbar = () =>  {
                     <Link to='/' className="navbar_link">Inicio</Link>
                     <Link to='/nosotros' className="navbar_link">Nosotros</Link>
                     <Link to='/contactanos' className="navbar_link">Contactános</Link>
-                    <Link to='/productos/Primeras Películas' className="navbar_link">Primeras Películas</Link>
-                    <Link to='/productos/Últimas Películas' className="navbar_link">Últimas Películas</Link>
+                    <Link to='/productos/Primeras Peliculas' className="navbar_link">Primeras Películas</Link>
+                    <Link to='/productos/Ultimas Peliculas' className="navbar_link">Últimas Películas</Link>
                 </nav>
 
                 <CartWidget/>
