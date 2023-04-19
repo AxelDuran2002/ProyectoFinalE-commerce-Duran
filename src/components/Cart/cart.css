@@ -1,0 +1,55 @@
+.btnPrimary2{
+    border-radius: 3px;
+    display: inline-block;
+    padding: 12px 10px;
+    text-decoration: none;
+    width: 62px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.btn-primary2{
+    color: white;
+    background-color: rgb(0, 106, 255);
+}
+
+.btnDanger1{
+    font-size: 20px;
+    border-radius: 3px;
+    display: inline-block;
+    padding: 10px 10px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.btn-danger1{
+    background-color: red;
+}
+
+.btnDanger2{
+    border-radius: 3px;
+    display: inline-block;
+    padding: 12px 12px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.btn-danger2{
+    color: white;
+    background-color: red;
+}
+
+.btnSuccess2{
+    border-radius: 3px;
+    display: inline-block;
+    padding: 9px 11px;
+    text-decoration: none;
+    height: 26px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.btn-success2{
+    color: white;
+    background-color: rgb(65, 168, 18);
+}

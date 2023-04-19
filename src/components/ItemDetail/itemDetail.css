@@ -2,3 +2,19 @@
     width: 300px;
     height: 300px;
 }
+
+.btnSuccess1{
+    border-radius: 3px;
+    display: inline-block;
+    padding: 12px 10px;
+    text-decoration: none;
+    height: 20px;
+    width: 142px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.btn-success1{
+    color: white;
+    background-color: rgb(65, 168, 18);
+}

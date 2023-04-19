@@ -1,44 +1,48 @@
 import './itemListContainer.css'
 import { useEffect, useState } from 'react'
-import { pedirDatos } from '../../helpers/pedirDatos'
 import ItemList from '../ItemList/itemList'
 import { useParams } from 'react-router-dom'
+import Loader from '../Loader/loader'
+import { collection, getDocs, query, where } from 'firebase/firestore'
+import { db } from '../../Firebase/config'
 
 const ItemListContainer = () => {
 
     const [productos, setProductos] = useState([])
     const [loading, setLoading] = useState(true)
-
+    
     const { categoryId } = useParams()
-    console.log(categoryId)
 
     useEffect(() => {
         setLoading(true)
 
-        pedirDatos()
+        //1
+        const productosRef = collection(db, "productos")
+        const q = categoryId
+                    ? query(productosRef, where("category", "==", categoryId))
+                    : productosRef
+        //2
+        getDocs(q)
             .then((res) => {
-                if (categoryId) {
-                    setProductos( res.filter((prod) => prod.category === categoryId) )
-                } else {
-                    setProductos(res)
-                }
+                setProductos( res.docs.map((doc) => {
+                    return {
+                        id: doc.id,
+                        ...doc.data()
+                    }
+                }))
             })
-            .catch((error) => {
-                console.log(error)
-            })
-            .finally(() => {
-                setLoading(false)
-            })
+            .finally(() => setLoading(false))
+
+        
     }, [categoryId])
 
     return (
         <div className="container my-5">
-
-            {
-                loading
-                    ? <h2>Cargando...</h2>
-                    : <ItemList items={productos}/>
+            {loading
+                ? <Loader />
+                : <ItemList items={productos} />
             }
+
         </div>
     )
 }
